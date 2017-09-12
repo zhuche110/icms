@@ -2,35 +2,30 @@
 {% block content%}
 <div class="row">
 <div class="col-sm-9">
-<div class="table-responsive" >
-  <table class="table" style='border:1px solid green'>
-    <tbody>
-	{% for e in entries_list %}
-      		<tr color="green">
-        	<td ><a href=/view/{{e.id}}/><h4>{{e}}</h4></a></td>
-        	<td class="text-right">{{e.create_date | date:"Y-m-d" }}</td>
-      		</tr>
-	{% endfor %}
-    </tbody>
-  </table>
+<ul class="list-group" style='background-color:#ECF5FF'>
+        {% for e in entries_list %}
+                <li class="list-group-item" style='background-color:#ECF5FF'><a href=/view/{{e.id}}/>{{e}}</a> &nbsp; {{e.create_date |date:"m-d" }} <span class="badge">新</span>
+        </li>
+         {% endfor %}
+
 
 
                         <ul class="pager">
-                            共有{{entries_list.paginator.count}}条记录 {{ entries_list.number }} / {{entries_list.paginator.num_pages }}页 
-			    	{% if entries_list.has_next or entries_list.paginator.num_pages == entries_list.paginator.num_pages%}
-                            		<li><a href="/cat/page/1">首页</a></li>
-                            	{% endif %} 
-				{% if entries_list.has_previous %}
-                            		<li><a href="/cat/page/{{ entries_list.previous_page_number }}">上一页</a></li>
-                            	{% endif %} 
-				{% if entries_list.has_next %}
-					<li><a href="/cat/page/{{ entries_list.next_page_number }}">下一页</a></li>
-                            		<li><a href="/cat/page/{{ entries_list.paginator.num_pages }} ">末页</a></li>
-                            	{% endif %}
+                            共有{{entries_list.paginator.count}}条记录 {{ entries_list.number }} / {{entries_list.paginator.num_pages }}页
+                                {% if entries_list.has_next or entries_list.paginator.num_pages == entries_list.paginator.num_pages%}
+                                        <li><a href="/">首页</a></li>
+                                {% endif %}
+                                {% if entries_list.has_previous %}
+                                        <li><a href="/cat/page/{{ entries_list.previous_page_number }}">上一页</a></li>
+                                {% endif %}
+                                {% if entries_list.has_next %}
+                                        <li><a href="/cat/page/{{ entries_list.next_page_number }}">下一页</a></li>
+                                        <li><a href="/cat/page/{{ entries_list.paginator.num_pages }} ">末页</a></li>
+                                {% endif %}
                         </ul>
 
 
-</div>
+</ul>
 
 </div>
 

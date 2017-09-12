@@ -2,13 +2,24 @@
 {% block content%}
 <div class="row">
 <div class="col-lg-9 col-xs-12">
+<div class="table-responsive" style='background-color:#ECF5FF' >
+<table class="table" style='border:1px solid green '>
+    <tbody>
+	{% for e in entries_list %}
+      		<tr color="green">
+        	<td><a href=/view/{{e.id}}/><h4>{{e}}</h4></a></td>
+        	<td class="text-justify">{{e.create_date |date:"m-d" }}</td>
+      		</tr>
+	{% endfor %}
+    </tbody>
+  </table>
 
 
 <ul class="list-group" style='background-color:#ECF5FF'>
 	{% for e in entries_list %}
-		<li class="list-group-item" style='background-color:#ECF5FF'><a href=/view/{{e.id}}/>{{e}}</a> &nbsp; {{e.create_date |date:"m-d" }} <span class="badge">新</span>
-	</li>
+	<li class="list-group-item"><a href=/view/{{e.id}}/><h4>{{e}}</h4></a></li>{{e.create_date |date:"m-d" }}
 	 {% endfor %}
+
 
 
 
@@ -24,10 +35,11 @@
 					<li><a href="/cat/page/{{ entries_list.next_page_number }}">下一页</a></li>
                             		<li><a href="/cat/page/{{ entries_list.paginator.num_pages }} ">末页</a></li>
                             	{% endif %}
-			</ul>
+                        </ul>
 
 
-</ul>
+</div>
+
 </div>
 
 <div class="col-lg-3 col-xs-12 ">
