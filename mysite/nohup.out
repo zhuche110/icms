@@ -1,0 +1,573 @@
+[08/Sep/2017 16:21:50] "GET / HTTP/1.1" 200 5773
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/servers/basehttp.py", line 159, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib64/python2.7/socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+[08/Sep/2017 18:44:24] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[08/Sep/2017 19:54:56] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[08/Sep/2017 21:22:10] code 400, message Bad request syntax ('\x01\xc2\x00\x00\x00\x04\x00\x00\xb6\x01\x00\x00SQLDB2RA\x00\x01\x00\x00\x04\x01\x01\x00\x05\x00\x1d\x00\x88\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x08\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x01\x00\x00@\x00\x00\x00@\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x02\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x08\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x04\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00        \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe4\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[08/Sep/2017 21:22:15] code 400, message Bad request syntax ('A\x00\x00\x00:0\x00\x00\xff\xff\xff\xff\xd4\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00\xff\xff\xff\xff\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00\xf0?\x00')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 9: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+Invalid HTTP_HOST header: u'localhost.localdomain:60001'. You may need to add u'localhost.localdomain' to ALLOWED_HOSTS.
+[08/Sep/2017 21:22:15] "GET / HTTP/1.0" 400 59896
+Invalid HTTP_HOST header: '10.177.152.217'. You may need to add u'10.177.152.217' to ALLOWED_HOSTS.
+[08/Sep/2017 22:11:20] "GET http://10.177.152.217/proxy.html HTTP/1.1" 400 60487
+[2017-09-08 22:11:20,642] - Broken pipe from ('219.133.49.231', 59994)
+
+[08/Sep/2017 22:11:21] code 400, message Bad request syntax ('\x04\x01')
+[08/Sep/2017 22:11:21] "" 400 -
+[08/Sep/2017 22:11:21] code 400, message Bad request syntax ('\x05\x01')
+[08/Sep/2017 22:11:21] "" 400 -
+Not Found: /favicon.ico
+[08/Sep/2017 23:41:28] "GET /favicon.ico HTTP/1.1" 404 2245
+[09/Sep/2017 00:26:07] code 400, message Bad request syntax ('\x01\xc2\x00\x00\x00\x04\x00\x00\xb6\x01\x00\x00SQLDB2RA\x00\x01\x00\x00\x04\x01\x01\x00\x05\x00\x1d\x00\x88\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x08\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x01\x00\x00@\x00\x00\x00@\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x02\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x08\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x04\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00        \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe4\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[09/Sep/2017 00:26:12] code 400, message Bad request syntax ('A\x00\x00\x00:0\x00\x00\xff\xff\xff\xff\xd4\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00\xff\xff\xff\xff\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00\xf0?\x00')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 9: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+Invalid HTTP_HOST header: u'localhost.localdomain:60001'. You may need to add u'localhost.localdomain' to ALLOWED_HOSTS.
+[09/Sep/2017 00:26:12] "GET / HTTP/1.0" 400 60141
+Invalid HTTP_HOST header: '10.177.152.217'. You may need to add u'10.177.152.217' to ALLOWED_HOSTS.
+[09/Sep/2017 01:11:44] "GET http://10.177.152.217/proxy.html HTTP/1.1" 400 60473
+[2017-09-09 01:11:44,878] - Broken pipe from ('219.133.49.231', 48548)
+
+[09/Sep/2017 01:11:45] code 400, message Bad request syntax ('\x04\x01')
+[09/Sep/2017 01:11:45] "" 400 -
+[09/Sep/2017 01:11:45] code 400, message Bad request syntax ('\x05\x01')
+[09/Sep/2017 01:11:45] "" 400 -
+[09/Sep/2017 08:29:02] code 400, message Bad request syntax ('\x01\xc2\x00\x00\x00\x04\x00\x00\xb6\x01\x00\x00SQLDB2RA\x00\x01\x00\x00\x04\x01\x01\x00\x05\x00\x1d\x00\x88\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x08\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x01\x00\x00@\x00\x00\x00@\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x02\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x08\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x04\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00        \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe4\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[09/Sep/2017 08:29:07] code 400, message Bad request syntax ('A\x00\x00\x00:0\x00\x00\xff\xff\xff\xff\xd4\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00\xff\xff\xff\xff\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00\xf0?\x00')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 9: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+Invalid HTTP_HOST header: u'localhost.localdomain:60001'. You may need to add u'localhost.localdomain' to ALLOWED_HOSTS.
+[09/Sep/2017 08:29:08] "GET / HTTP/1.0" 400 59896
+Invalid HTTP_HOST header: '10.177.152.217'. You may need to add u'10.177.152.217' to ALLOWED_HOSTS.
+[09/Sep/2017 09:10:40] "GET http://10.177.152.217/proxy.html HTTP/1.1" 400 60256
+[2017-09-09 09:10:40,009] - Broken pipe from ('219.133.49.231', 41478)
+
+[09/Sep/2017 09:10:40] code 400, message Bad request syntax ('\x04\x01')
+[09/Sep/2017 09:10:40] "" 400 -
+[09/Sep/2017 09:10:41] code 400, message Bad request syntax ('\x05\x01')
+[09/Sep/2017 09:10:41] "" 400 -
+Not Found: /favicon.ico
+[09/Sep/2017 15:10:12] "GET /favicon.ico HTTP/1.1" 404 2245
+[09/Sep/2017 15:10:14] "GET / HTTP/1.1" 200 5773
+[09/Sep/2017 15:10:14] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 304 0
+[09/Sep/2017 15:10:14] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[09/Sep/2017 15:10:14] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 304 0
+[09/Sep/2017 15:10:14] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 304 0
+[09/Sep/2017 15:11:04] "GET / HTTP/1.1" 200 5773
+[09/Sep/2017 15:11:18] "GET / HTTP/1.1" 200 5773
+[09/Sep/2017 15:11:18] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 200 143
+[09/Sep/2017 15:11:18] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[09/Sep/2017 15:11:19] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+[09/Sep/2017 15:11:19] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 200 84349
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 08, 2017 - 16:21:47
+Django version 1.10.7, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:60001/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('27.38.96.224', 53381)
+----------------------------------------
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 09, 2017 - 15:18:38
+Django version 1.10.7, using settings 'mysite.settings'
+Starting development server at http://0.0.0.0:60001/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x1cb21b8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/web/django_projects/leecms/mysite/mysite/urls.py", line 26, in <module>
+    url(r'^ueditor/',include('DjangoUeditor.urls' )),
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/site-packages/DjangoUeditor/urls.py", line 4, in <module>
+    from django.conf.urls import patterns, url
+ImportError: cannot import name patterns
+Unhandled exception in thread started by <function wrapper at 0x1928cf8>
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/commands/runserver.py", line 113, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/autoreload.py", line 249, in raise_last_exception
+    six.reraise(*_exception)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/web/django_projects/leecms/mysite/icms/models.py", line 23, in <module>
+    class Entries(models.Model):
+  File "/home/web/django_projects/leecms/mysite/icms/models.py", line 27, in Entries
+    Content=UEditorField(u'内容	',width=600, height=300, toolbars="full", imagePath="", filePath="", upload_settings={"imageMaxSize":1204000},settings={},command=None,event_handler=myEventHander(),blank=True)
+NameError: name 'myEventHander' is not defined
+Unhandled exception in thread started by <function wrapper at 0x2b061b8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/web/django_projects/leecms/mysite/mysite/urls.py", line 26, in <module>
+    url(r'^ueditor/',include('DjangoUeditor.urls' )),
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/site-packages/DjangoUeditor/urls.py", line 4, in <module>
+    from django.conf.urls import patterns, url
+ImportError: cannot import name patterns
+Unhandled exception in thread started by <function wrapper at 0x36431b8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/commands/runserver.py", line 121, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/base.py", line 374, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/management/base.py", line 361, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/core/checks/urls.py", line 24, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/urls/resolvers.py", line 313, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/urls/resolvers.py", line 306, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/web/django_projects/leecms/mysite/mysite/urls.py", line 26, in <module>
+    url(r'^ueditor/',include('DjangoUeditor.urls' )),
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/site-packages/DjangoUeditor/urls.py", line 4, in <module>
+    from django.conf.urls import patterns, url
+ImportError: cannot import name patterns
+Error: That port is already in use.
+[11/Sep/2017 03:36:36] "GET / HTTP/1.1" 200 5655
+[11/Sep/2017 03:36:36] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[11/Sep/2017 03:36:36] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 200 143
+[11/Sep/2017 03:36:36] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 200 84349
+[11/Sep/2017 03:36:36] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+Not Found: /favicon.ico
+[11/Sep/2017 03:36:38] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 03:36:50] "GET /view/11/ HTTP/1.1" 200 4060
+Not Found: /favicon.ico
+[11/Sep/2017 03:36:50] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 03:37:05] "GET /view/11/ HTTP/1.1" 200 4060
+Not Found: /favicon.ico
+[11/Sep/2017 03:37:06] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 03:37:46] "GET /view/11/ HTTP/1.1" 200 4060
+Not Found: /favicon.ico
+[11/Sep/2017 03:37:46] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 03:39:40] "GET /view/11/ HTTP/1.1" 200 4060
+Not Found: /favicon.ico
+[11/Sep/2017 03:39:40] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 03:40:03] "GET /view/10/ HTTP/1.1" 200 3637
+Not Found: /favicon.ico
+[11/Sep/2017 03:40:03] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 03:44:28] "GET /view/11/ HTTP/1.1" 200 4060
+Not Found: /favicon.ico
+[11/Sep/2017 03:44:29] "GET /favicon.ico HTTP/1.1" 404 2534
+[11/Sep/2017 16:16:10] "GET / HTTP/1.1" 200 6360
+[11/Sep/2017 16:16:10] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[11/Sep/2017 16:16:10] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 304 0
+[11/Sep/2017 16:16:10] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 200 84349
+[11/Sep/2017 16:16:10] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 1501
+[11/Sep/2017 16:16:10] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+[11/Sep/2017 16:16:11] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 200 143
+[11/Sep/2017 16:16:11] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[11/Sep/2017 16:16:11] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 304 0
+[11/Sep/2017 16:16:14] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Sep/2017 16:16:15] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 591795
+Not Found: /favicon.ico
+[11/Sep/2017 16:16:19] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:16:19] "GET /cat/page/2/ HTTP/1.1" 200 5088
+Not Found: /favicon.ico
+[11/Sep/2017 16:16:20] "GET /favicon.ico HTTP/1.1" 404 2717
+Not Found: /favicon.ico
+[11/Sep/2017 16:16:26] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:16:38] "GET /view/18/ HTTP/1.1" 200 4776
+Not Found: /favicon.ico
+[11/Sep/2017 16:16:39] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:18:02] "GET / HTTP/1.1" 200 6360
+Not Found: /favicon.ico
+[11/Sep/2017 16:18:03] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:18:34] "GET /cat/page/1/ HTTP/1.1" 200 5809
+Not Found: /favicon.ico
+[11/Sep/2017 16:18:35] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:18:35] "GET /cat/page/2/ HTTP/1.1" 200 5088
+Not Found: /favicon.ico
+[11/Sep/2017 16:18:36] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:19:03] "GET /cat/page/1/ HTTP/1.1" 200 5809
+Not Found: /favicon.ico
+[11/Sep/2017 16:19:04] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:19:04] "GET /cat/page/2/ HTTP/1.1" 200 5088
+Not Found: /favicon.ico
+[11/Sep/2017 16:19:05] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 16:19:44] "GET /view/4/ HTTP/1.1" 200 4064
+[11/Sep/2017 16:20:02] "GET /cat/page/1/ HTTP/1.1" 200 5809
+[11/Sep/2017 16:20:08] "GET /cat/page/2/ HTTP/1.1" 200 5088
+Not Found: /favicon.ico
+[11/Sep/2017 16:20:09] "GET /favicon.ico HTTP/1.1" 404 2717
+[11/Sep/2017 17:30:28] code 400, message Bad request syntax ('\x01\xc2\x00\x00\x00\x04\x00\x00\xb6\x01\x00\x00SQLDB2RA\x00\x01\x00\x00\x04\x01\x01\x00\x05\x00\x1d\x00\x88\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x08\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x01\x00\x00@\x00\x00\x00@\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x02\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x08\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x04\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00        \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe4\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[11/Sep/2017 17:30:33] code 400, message Bad request syntax ('A\x00\x00\x00:0\x00\x00\xff\xff\xff\xff\xd4\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00\xff\xff\xff\xff\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00\xf0?\x00')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 9: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[11/Sep/2017 17:30:34] "GET / HTTP/1.0" 200 6360
+Invalid HTTP_HOST header: '10.177.152.217'. You may need to add u'10.177.152.217' to ALLOWED_HOSTS.
+[11/Sep/2017 18:00:55] "GET http://10.177.152.217/proxy.html HTTP/1.1" 400 61167
+[2017-09-11 18:00:55,304] - Broken pipe from ('219.133.49.231', 57350)
+
+[11/Sep/2017 18:00:55] code 400, message Bad request syntax ('\x04\x01')
+[11/Sep/2017 18:00:55] "" 400 -
+[11/Sep/2017 18:00:56] code 400, message Bad request syntax ('\x05\x01')
+[11/Sep/2017 18:00:56] "" 400 -
+[11/Sep/2017 20:08:50] "GET /static/static_root/ckeditor/ckeditor/ckeditor/ckeditor/samples/index.html HTTP/1.1" 404 1817
+[11/Sep/2017 20:43:59] "GET /admin/icms/entries/add HTTP/1.1" 301 0
+[11/Sep/2017 20:43:59] "GET /admin/icms/entries/add/ HTTP/1.0" 302 0
+[11/Sep/2017 20:43:59] "GET /admin/login/?next=/admin/icms/entries/add/ HTTP/1.0" 200 1687
+[11/Sep/2017 21:00:42] "GET / HTTP/1.1" 200 6360
+[11/Sep/2017 22:03:30] "GET /view/17 HTTP/1.1" 200 4299
+[11/Sep/2017 22:14:48] code 400, message Bad request syntax ('\x01\xc2\x00\x00\x00\x04\x00\x00\xb6\x01\x00\x00SQLDB2RA\x00\x01\x00\x00\x04\x01\x01\x00\x05\x00\x1d\x00\x88\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x08\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x01\x00\x00@\x00\x00\x00@\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x02\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x08\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\t\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x04\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00        \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe4\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[11/Sep/2017 22:14:53] code 400, message Bad request syntax ('A\x00\x00\x00:0\x00\x00\xff\xff\xff\xff\xd4\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00\xff\xff\xff\xff\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00\xf0?\x00')
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/Django-1.10.7-py2.7.egg/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xff in position 9: ordinal not in range(128)
+Logged from file basehttp.py, line 131
+[11/Sep/2017 22:14:53] "GET / HTTP/1.0" 200 6360
+Invalid HTTP_HOST header: '10.177.152.217'. You may need to add u'10.177.152.217' to ALLOWED_HOSTS.
+[11/Sep/2017 23:07:46] "GET http://10.177.152.217/proxy.html HTTP/1.1" 400 61384
+[2017-09-11 23:07:46,140] - Broken pipe from ('219.133.49.231', 53829)
+
+[11/Sep/2017 23:07:46] code 400, message Bad request syntax ('\x04\x01')
+[11/Sep/2017 23:07:46] "" 400 -
+[11/Sep/2017 23:07:47] code 400, message Bad request syntax ('\x05\x01')
+[11/Sep/2017 23:07:47] "" 400 -
+[12/Sep/2017 00:45:41] "GET /admin/jsi18n HTTP/1.1" 301 0
+[12/Sep/2017 00:45:41] "GET /admin/jsi18n/ HTTP/1.0" 302 0
+[12/Sep/2017 00:45:41] "GET /admin/login/?next=/admin/jsi18n/ HTTP/1.0" 200 1667
+[12/Sep/2017 00:57:52] "GET /view/11/ HTTP/1.0" 200 4481
+[12/Sep/2017 00:58:04] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.0" 304 0
+[12/Sep/2017 00:58:05] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.0" 304 0
+[12/Sep/2017 00:58:05] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.0" 304 0
+[12/Sep/2017 00:58:10] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.0" 200 591795
+[12/Sep/2017 00:58:26] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.0" 304 0
+[12/Sep/2017 00:58:26] "GET /static/ckeditor/ckeditor-init.js HTTP/1.0" 200 1501
+[12/Sep/2017 01:11:25] "GET / HTTP/1.1" 200 6360
+[12/Sep/2017 01:11:25] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[12/Sep/2017 01:11:25] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 304 0
+[12/Sep/2017 01:11:25] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 304 0
+[12/Sep/2017 01:11:25] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[12/Sep/2017 01:11:25] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 304 0
+[12/Sep/2017 01:11:25] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[12/Sep/2017 01:11:30] "GET / HTTP/1.1" 200 6360
+[12/Sep/2017 01:11:32] "GET /view/18/ HTTP/1.1" 200 4776
+[12/Sep/2017 01:32:15] "GET / HTTP/1.1" 200 6434
+[12/Sep/2017 01:32:17] "GET /view/18/ HTTP/1.1" 200 4850
+[12/Sep/2017 05:07:19] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 05:07:21] "GET /view/21/ HTTP/1.1" 200 5849
+[12/Sep/2017 05:08:44] "GET /view/21/ HTTP/1.1" 200 5920
+[12/Sep/2017 05:09:20] "GET /view/21/ HTTP/1.1" 200 5933
+[12/Sep/2017 05:09:23] "GET /view/21/ HTTP/1.1" 200 5933
+[12/Sep/2017 05:09:44] "GET /view/21/ HTTP/1.1" 200 5940
+[12/Sep/2017 05:11:02] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 304 0
+[12/Sep/2017 05:11:02] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:02] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[12/Sep/2017 05:11:02] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:02] "GET /static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css HTTP/1.1" 200 2804
+[12/Sep/2017 05:11:02] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:03] "GET /static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js HTTP/1.1" 200 30179
+[12/Sep/2017 05:11:03] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:03] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 200 143
+[12/Sep/2017 05:11:03] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+[12/Sep/2017 05:11:04] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+[12/Sep/2017 05:11:05] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 200 84349
+[12/Sep/2017 05:11:09] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 05:11:09] "GET /static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/bootstrap-3.3.7-dist/js/bootstrap.min.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/bootstrap-3.3.7-dist/css/mycss.css HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/bootstrap-3.3.7-dist/js/jquery.min.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/bootstrap-3.3.7-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[12/Sep/2017 05:11:09] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[12/Sep/2017 05:11:16] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 591795
+Not Found: /favicon.ico
+[12/Sep/2017 05:11:19] "GET /favicon.ico HTTP/1.1" 404 2717
+[12/Sep/2017 05:11:22] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 450560
+[2017-09-12 05:11:22,891] - Broken pipe from ('117.136.39.214', 31727)
+
+[12/Sep/2017 05:11:23] "GET /view/22/ HTTP/1.1" 200 4421
+Not Found: /favicon.ico
+[12/Sep/2017 05:11:25] "GET /favicon.ico HTTP/1.1" 404 2717
+[12/Sep/2017 05:12:46] "GET /view/21/ HTTP/1.1" 200 5940
+Not Found: /favicon.ico
+[12/Sep/2017 05:12:47] "GET /favicon.ico HTTP/1.1" 404 2717
+[12/Sep/2017 05:15:43] "GET / HTTP/1.1" 200 4803
+Not Found: /favicon.ico
+[12/Sep/2017 05:15:44] "GET /favicon.ico HTTP/1.1" 404 2717
+[12/Sep/2017 05:16:05] "GET /view/21/ HTTP/1.1" 200 5940
+Not Found: /favicon.ico
+[12/Sep/2017 05:16:06] "GET /favicon.ico HTTP/1.1" 404 2717
+Not Found: /wp-includes/js/comment-reply.min.js
+[12/Sep/2017 05:33:36] "GET /wp-includes/js/comment-reply.min.js HTTP/1.1" 404 2789
+Not Found: /skins/vector/csshover.htc
+[12/Sep/2017 05:33:36] "GET /skins/vector/csshover.htc HTTP/1.1" 404 2759
+Not Found: /misc/states.js
+[12/Sep/2017 05:33:36] "GET /misc/states.js HTTP/1.1" 404 2726
+[12/Sep/2017 05:33:36] "GET /static/js/md5.js HTTP/1.1" 404 1646
+Not Found: /include/js/md5.js
+[12/Sep/2017 05:33:37] "GET /include/js/md5.js HTTP/1.1" 404 2735
+Not Found: /include/js/common.js
+[12/Sep/2017 05:33:37] "GET /include/js/common.js HTTP/1.1" 404 2744
+Not Found: /include/js/ajax.js
+[12/Sep/2017 05:33:37] "GET /include/js/ajax.js HTTP/1.1" 404 2738
+Not Found: /res/js/dev/pages/common/global.js
+[12/Sep/2017 05:33:37] "GET /res/js/dev/pages/common/global.js HTTP/1.1" 404 2783
+Not Found: /js/wind_editor.js
+[12/Sep/2017 05:33:38] "GET /js/wind_editor.js HTTP/1.1" 404 2735
+Not Found: /styles/prosilver/template/forum_fn.js
+[12/Sep/2017 05:33:38] "GET /styles/prosilver/template/forum_fn.js HTTP/1.1" 404 2795
+Not Found: /styles/prosilver/template/styleswitcher.js
+[12/Sep/2017 05:33:38] "GET /styles/prosilver/template/styleswitcher.js HTTP/1.1" 404 2810
+Not Found: /editor/ubb/uploader.js
+[12/Sep/2017 05:33:38] "GET /editor/ubb/uploader.js HTTP/1.1" 404 2750
+Not Found: /template/default/style.css
+[12/Sep/2017 05:33:39] "GET /template/default/style.css HTTP/1.1" 404 2762
+[12/Sep/2017 05:33:39] "GET /static/js/reset.js HTTP/1.1" 404 1652
+Not Found: /images/js/common.js
+[12/Sep/2017 05:33:39] "GET /images/js/common.js HTTP/1.1" 404 2741
+Not Found: /templets/style/dede.css
+[12/Sep/2017 05:33:39] "GET /templets/style/dede.css HTTP/1.1" 404 2753
+Not Found: /include/dedeajax2.js
+[12/Sep/2017 05:33:40] "GET /include/dedeajax2.js HTTP/1.1" 404 2744
+Not Found: /images/default/inc.js
+[12/Sep/2017 05:33:40] "GET /images/default/inc.js HTTP/1.1" 404 2747
+Not Found: /js/lang/core/zh-cn.js
+[12/Sep/2017 05:33:40] "GET /js/lang/core/zh-cn.js HTTP/1.1" 404 2747
+Not Found: /js/lang/cms/zh-cn.js
+[12/Sep/2017 05:33:40] "GET /js/lang/cms/zh-cn.js HTTP/1.1" 404 2744
+Not Found: /d/js/acmsd/ecms_dialog.js
+[12/Sep/2017 05:33:41] "GET /d/js/acmsd/ecms_dialog.js HTTP/1.1" 404 2759
+Not Found: /skin/default/js/tabs.js
+[12/Sep/2017 05:33:41] "GET /skin/default/js/tabs.js HTTP/1.1" 404 2753
+Not Found: /media/system/js/tab.js
+[12/Sep/2017 05:33:41] "GET /media/system/js/tab.js HTTP/1.1" 404 2750
+Not Found: /media/system/css/mootree.css
+[12/Sep/2017 05:33:41] "GET /media/system/css/mootree.css HTTP/1.1" 404 2768
+Not Found: /lang/zh/front.js
+[12/Sep/2017 05:33:42] "GET /lang/zh/front.js HTTP/1.1" 404 2732
+Not Found: /style/default/content.css
+[12/Sep/2017 05:33:42] "GET /style/default/content.css HTTP/1.1" 404 2759
+Not Found: /lang/zh/edit.js
+[12/Sep/2017 05:33:42] "GET /lang/zh/edit.js HTTP/1.1" 404 2729
+Not Found: /rockmongo/
+[12/Sep/2017 05:33:42] "GET /rockmongo/ HTTP/1.1" 404 2714
+Not Found: /server-status
+[12/Sep/2017 05:33:43] "GET /server-status HTTP/1.1" 404 2723
+Not Found: /ueditor.all.js
+[12/Sep/2017 05:33:43] "GET /ueditor.all.js HTTP/1.1" 404 2726
+Not Found: /wikilib.d/PmWiki.ChangeLog
+[12/Sep/2017 05:33:43] "GET /wikilib.d/PmWiki.ChangeLog HTTP/1.1" 404 2762
+Not Found: /4e5e5d7364f443e28fbf0d3ae744a59a
+[12/Sep/2017 05:33:43] "GET /4e5e5d7364f443e28fbf0d3ae744a59a HTTP/1.1" 404 2780
+Not Found: /jenkins/
+[12/Sep/2017 05:33:44] "GET /jenkins/ HTTP/1.1" 404 2708
+[12/Sep/2017 05:33:44] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 06:08:07] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 06:09:37] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 06:09:40] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 06:09:44] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 06:09:50] "GET /view/11/ HTTP/1.1" 200 4539
+[12/Sep/2017 06:10:00] "GET /admin/icms/entries/11/change/ HTTP/1.1" 200 9482
+[12/Sep/2017 06:10:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[12/Sep/2017 06:10:00] "GET /static/ckeditor/ckeditor/plugins/codemirror/plugin.js?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:00] "GET /static/ckeditor/ckeditor/plugins/codemirror/lang/en.js?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:01] "GET /static/ckeditor/ckeditor/plugins/codemirror/icons/searchcode.png?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:01] "GET /static/ckeditor/ckeditor/plugins/codemirror/icons/uncommentselectedrange.png?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:01] "GET /static/ckeditor/ckeditor/plugins/codemirror/icons/autocomplete.png?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:01] "GET /static/ckeditor/ckeditor/plugins/codemirror/icons/autoformat.png?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:01] "GET /static/ckeditor/ckeditor/plugins/codemirror/icons/commentselectedrange.png?t=GB8C HTTP/1.1" 304 0
+[12/Sep/2017 06:10:22] "POST /admin/icms/entries/11/change/ HTTP/1.1" 302 0
+[12/Sep/2017 06:10:22] "GET /admin/icms/entries/ HTTP/1.1" 200 4989
+[12/Sep/2017 06:10:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[12/Sep/2017 06:10:24] "GET /view/11/ HTTP/1.1" 200 4454
+[12/Sep/2017 06:13:22] "GET / HTTP/1.1" 200 4803
+[12/Sep/2017 06:13:33] "GET /view/21/ HTTP/1.1" 200 5940

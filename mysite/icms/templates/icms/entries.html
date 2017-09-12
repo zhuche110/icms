@@ -1,0 +1,58 @@
+{% extends "icms/base.html" %}
+{% block title%}{{entries.title}} {%endblock%}
+{% block content%}
+<div class="row">
+<div class="col-sm-9">
+
+<div class="panel panel-success">
+    <table class="table">
+        <th><h3 class='text-center'>{{entries.title}}</h3></th>
+        <tr><td class='text-center'><small>来源:{{entries.source}} 日期:{{entries.create_date|date:"Y-m-d H:i:s"}} 作者:admin </small></td></tr>
+    </table>
+    <div class="panel-body" style='background-color:#ECF5FF'>
+	<div id='content'>
+	{%autoescape off%}
+      		{{entries.content}}
+	{% endautoescape%}
+	</div>
+	<br/>
+	<span class="label label-success">{{entries.tags}}</span>
+	<br/>
+	<span><small>来源:{{entries.source}} 日期:{{entries.create_date|date:"Y-m-d H:i:s"}} 作者:admin </small></span>
+	
+    </div>
+</div>
+
+
+</div>
+
+<div class="col-sm-3">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">关于我</h3>
+    </div>
+    <div class="panel-body">
+	全栈挨踢运维工程师.
+    </div>
+</div>
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">标签云</h3>
+    </div>
+    <div class="panel-body">
+       <span class="label label-default">默认标签</span>
+<h1><span class="label label-primary">主要标签</span></h1>
+<span class="label label-success">成功标签</span>
+<span class="label label-warning">警告标签</span>
+<h3><span class="label label-info">信息标签</span></h3>
+<span class="label label-warning">警告标签</span>
+<h4><span class="label label-danger">危险标签</span></h4>
+    </div>
+</div>
+
+
+
+</div>
+ </div>
+
+{% endblock%}

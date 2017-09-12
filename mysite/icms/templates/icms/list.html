@@ -1,0 +1,26 @@
+{% extends "icms/base.html" %}
+{% block content%}
+
+<div class="table-responsive">
+  <table class="table">
+    <tbody>
+	{% for e in entries_list %}
+      		<tr>
+        	<td>{{e}}</td>
+        	<td>{{e.create_date}}</td>
+      		</tr>
+    </tbody>
+  </table>
+</div>
+
+<!--
+{% for e in entries_list %}
+	{{e}}
+	<br/>
+	{% autoescape off %}
+		{{e.content}}
+	{% endautoescape %}
+
+{% endfor %}
+-->
+{% endblock%}
