@@ -1,7 +1,13 @@
+#coding=utf8
 from django.shortcuts import render
 from django.http import HttpResponse
 from models import Entries,Category
 from django.core.paginator import Paginator,PageNotAnInteger,EmptyPage
+import jieba
+import jieba.analyse
+import re
+from django.utils.html import strip_tags
+
 # Create your views here.
 def hello(request):
 	context={}
@@ -28,7 +34,13 @@ def index(request,page_num=1):
 	
 def entries_views(request,entries_id):
 	entries=Entries.objects.filter(orderby__gte=0).get(pk=entries_id)
-	context={'entries':entries}
+	#jieba.set_dictionary("/home/app/django_projects/leecms/icms/mysite/jieba.txt")
+	#jieba.initialize()
+	#删除html标签,方便抽取关键词
+	#dr=re.compile(r'<[^>]+>',re.S)
+	#keywords=jieba.analyse.extract_tags(dr.sub('',entries.content),5)
+	keywords=jieba.analyse.extract_tags(strip_tags(entries.content),5)
+	context={'entries':entries,'keywords':keywords}
 	return render(request,'icms/entries.html',context)
 	
 

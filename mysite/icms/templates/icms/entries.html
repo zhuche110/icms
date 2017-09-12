@@ -17,6 +17,9 @@
 	</div>
 	<br/>
 	<span class="label label-success">{{entries.tags}}</span>
+	{% for key in keywords%}
+		<span class="label label-info">{{key}}</span>
+	{%endfor%}
 	<br/>
 	<span><small>来源:{{entries.source}} 日期:{{entries.create_date|date:"Y-m-d H:i:s"}} 作者:admin </small></span>
 	
