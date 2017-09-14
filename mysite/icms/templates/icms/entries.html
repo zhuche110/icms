@@ -1,9 +1,16 @@
 {% extends "icms/base.html" %}
 {% block title%}{{entries.title}} {%endblock%}
 {% block content%}
+
+<script>
+$(document).ready(function(){
+    $("#content img").addClass("img-responsive");
+});
+</script>
+
+
 <div class="row">
 <div class="col-sm-9">
-
 <div class="panel panel-success">
     <table class="table">
         <th><h3 class='text-center'>{{entries.title}}</h3></th>

@@ -1,6 +1,7 @@
 #coding=utf8
 from __future__ import unicode_literals
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 #from DjangoUeditor.models import UEditorField
 
 from django.db import models
@@ -22,7 +23,7 @@ class Category(models.Model):
 
 class Entries(models.Model):
 	title=models.CharField('文章标题', max_length=100)
-	content=RichTextField('文章内容', max_length=60000)
+	content=RichTextUploadingField('文章内容', max_length=60000)
 	author=models.CharField('作者', max_length=100,blank=True)
 	orderby=models.IntegerField('排序',default=0)
 	category=models.ForeignKey(
