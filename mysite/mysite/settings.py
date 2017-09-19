@@ -25,7 +25,7 @@ SECRET_KEY = 'hr0ung-&n+rh$sk^j)96$gm3e4nn13dzqqpn0b5tmyk2ai389-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'10.60.32.4',u'123.207.64.185',u'localhost.localdomain',u'127.0.0.1']
+ALLOWED_HOSTS = [u'10.60.32.4',u'123.207.64.185',u'localhost.localdomain',u'127.0.0.1',u'172.31.231.19','www.0755.today','47.91.155.42','0755.today','0.0.0.0']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'icms',
+	'ckeditor_uploader',
 	'ckeditor',
 ]
 
@@ -122,22 +123,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR,'static_root/')
+STATIC_ROOT = os.path.join(BASE_DIR,'static_root/')
 STATICFILES_DIRS=(
 			(os.path.join(BASE_DIR,'static')),
 			)
 CKEDITOR_JQUERY_URL='https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media/')
+CKEDITOR_UPLOAD_PATH ='uploads/'
+
 
 ############
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'Standard',
-	'extraPlugins' : 'sourcedialog,codemirror,widget,lineutils,codesnippet,selectall',
+	'extraPlugins' : 'sourcedialog,codemirror,widget,lineutils,codesnippet,selectall,uploadimage,widget,clipboard,filetools,notificationaggregator,uploadwidget',
+	'uploadUrl':'/media/uploads/',
 	 #"removePlugins": "stylesheetparser",
     },
 }
 
 
-
+CKEDITOR_UPLOAD_SLUGIFY_FILENAME =False
 
 
